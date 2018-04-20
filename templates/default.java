@@ -41,7 +41,8 @@ public class __ACTIVITY__ extends CordovaActivity
         loadUrl(launchUrl);
 
         WebView webView = (WebView) appView.getView();
-        webView.getSettings().setLoadWithOverviewMode(true);
-        webView.getSettings().setUseWideViewPort(true);
+        webView.getSettings().setBuiltInZoomControls(true);
+        // webView.getSettings().setDefaultZoom(ZoomDensity.MEDIUM);
+        webView.getSettings().setSupportZoom(true);
     }
 }

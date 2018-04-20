@@ -45,8 +45,9 @@ public class __ACTIVITY__ extends CordovaActivity
     public Object onMessage(String id, Object data) {
         if ("onXWalkReady".equals(id)) {
             XWalkView webView = (XWalkView) appView.getView();
-            webView.getSettings().setLoadWithOverviewMode(true);
-            webView.getSettings().setUseWideViewPort(true);
+            webView.getSettings().setBuiltInZoomControls(true);
+            // webView.getSettings().setDefaultZoom(ZoomDensity.MEDIUM);
+            webView.getSettings().setSupportZoom(true);
         }
         return super.onMessage(id, data);
     }
