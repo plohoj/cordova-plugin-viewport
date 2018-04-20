@@ -44,5 +44,6 @@ public class __ACTIVITY__ extends CordovaActivity
         webView.getSettings().setBuiltInZoomControls(true);
         // webView.getSettings().setDefaultZoom(ZoomDensity.MEDIUM);
         webView.getSettings().setSupportZoom(true);
+        webView.getSettings().setDisplayZoomControls(false);
     }
 }
